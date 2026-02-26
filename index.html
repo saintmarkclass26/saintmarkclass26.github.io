@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>St. Mark Class 26</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300;1,500&family=DM+Sans:wght@300;400;500&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== ADMIN LOGIN MODAL ===================== -->
+  <div class="modal-overlay" id="admin-modal">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close-btn">✕</button>
+      <div class="modal-icon">🔑</div>
+      <h3>Admin Access</h3>
+      <p>Enter the admin password to manage boards.</p>
+      <input type="password" id="admin-password-input" placeholder="Password" />
+      <div class="modal-error" id="modal-error"></div>
+      <button class="btn btn-dark" id="modal-submit-btn">Unlock</button>
+    </div>
+  </div>
+
+  <!-- ===================== BOARD PAGE ===================== -->
+  <div class="board-page" id="board-page">
+    <div class="board-page-header">
+      <button class="back-btn" id="back-btn">← Back</button>
+      <div class="board-page-title-wrap">
+        <span class="board-page-tag" id="board-page-tag"></span>
+        <h2 class="board-page-title" id="board-page-title"></h2>
+      </div>
+      <button class="btn btn-danger admin-only" id="clear-board-btn">🗑 Clear Board</button>
+    </div>
+
+    <div class="board-share-section">
+      <form id="board-share-form" class="board-share-form" novalidate>
+        <div class="bsf-row">
+          <div class="bsf-group">
+            <label for="bsf-name">Name <span class="optional">(optional)</span></label>
+            <input type="text" id="bsf-name" placeholder="Anonymous" maxlength="40" autocomplete="off" />
+          </div>
+          <div class="bsf-group bsf-grow">
+            <label for="bsf-message">Share what you learned <span class="required">*</span></label>
+            <textarea id="bsf-message" placeholder="Write your insight here..." rows="3" maxlength="300" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-pin">📌 Pin Note</button>
+        </div>
+        <div class="bsf-meta">
+          <div class="bsf-error" id="bsf-error" aria-live="polite"></div>
+          <div class="bsf-char"><span id="bsf-char-remaining">300</span> characters remaining</div>
+        </div>
+      </form>
+    </div>
+
+    <div class="corkboard" id="corkboard">
+      <p class="corkboard-empty" id="corkboard-empty">No notes yet — be the first! 🌟</p>
+    </div>
+  </div>
+
+  <!-- ===================== HOME PAGE ===================== -->
+  <div class="home-page" id="home-page">
+
+    <header class="hero">
+      <div class="hero-bg-gradient"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">The Coptic Orthodox Church</div>
+        <h1 class="hero-title">St. Mark<br><em>Class 26</em></h1>
+        <div class="hero-nav">
+          <a href="#classes-section" class="btn btn-hero scroll-link">📚 Classes</a>
+          <a href="#assignments-section" class="btn btn-hero-outline scroll-link">📝 Assignments</a>
+        </div>
+      </div>
+
+      <!-- Hidden admin trigger -->
+      <button class="admin-trigger" id="admin-trigger-btn" title="Admin login">⚙</button>
+    </header>
+
+    <!-- Thin scroll progress bar -->
+    <div class="page-progress" id="page-progress"></div>
+
+    <!-- CLASSES SECTION -->
+    <section id="classes-section" class="section">
+      <div class="section-inner">
+        <div class="section-label">Section 01</div>
+        <h2 class="section-title">Classes</h2>
+        <p class="section-sub">Each week is a new chapter in our journey. Click to open a board.</p>
+        <div class="cards-grid" id="weeks-grid"></div>
+      </div>
+    </section>
+
+    <!-- ASSIGNMENTS SECTION -->
+    <section id="assignments-section" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-label">Section 02</div>
+        <h2 class="section-title">Assignments</h2>
+        <p class="section-sub">Reflections and submissions for each assignment. Click to open a board.</p>
+        <div class="cards-grid" id="assignments-grid"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>St. Mark Class 26 &nbsp;·&nbsp; The Coptic Orthodox Church 🕊️</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
