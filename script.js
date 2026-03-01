@@ -40,6 +40,14 @@ const WEEKS = [
     title:       'Baptism — Entering into the Covenant',
     description: 'Exploring the sacred sacrament of Baptism and what it means to enter into a covenant relationship with God.',
   },
+  {
+    id:          'week-4',
+    type:        'week',
+    number:      4,
+    emoji:       '👨‍👧‍👦',
+    title:       'The Fatherhood of God (أبوة الآب)',
+    description: 'Reflecting on what it means that God is our Father — exploring His love, care, and the intimate relationship He calls us into as His children.',
+  },
 ];
 
 const ASSIGNMENTS = [
