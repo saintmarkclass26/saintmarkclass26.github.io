@@ -44,7 +44,7 @@ const WEEKS = [
     id:          'week-4',
     type:        'week',
     number:      4,
-    emoji:       '🕊️',
+    emoji:       '👨‍👧‍👦',
     title:       'The Fatherhood of God (أبوة الآب)',
     description: 'Reflecting on what it means that God is our Father — exploring His love, care, and the intimate relationship He calls us into as His children.',
   },
