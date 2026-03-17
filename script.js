@@ -48,6 +48,14 @@ const WEEKS = [
     title:       'The Fatherhood of God (أبوة الآب)',
     description: 'Reflecting on what it means that God is our Father — exploring His love, care, and the intimate relationship He calls us into as His children.',
   },
+  {
+    id:          'week-5',
+    type:        'week',
+    number:      5,
+    emoji:       '✝️',
+    title:       'Baptism — Entering into the Covenant Part 2',
+    description: 'Continuing our exploration of the sacred sacrament of Baptism — diving deeper into the covenant relationship with God and its meaning in our daily lives.',
+  },
 ];
 
 const ASSIGNMENTS = [
@@ -82,6 +90,14 @@ const ASSIGNMENTS = [
     emoji:       '🎯',
     title:       'Your Life Goal (هدفك في الحياه)',
     description: 'Reflect on your purpose and direction in life — what drives you, what you hope to achieve, and how your faith shapes the goals you set for yourself.',
+  },
+  {
+    id:          'assignment-5',
+    type:        'assignment',
+    number:      5,
+    emoji:       '🧭',
+    title:       "What's God's Will? — Markers On The Road",
+    description: "Reflect on how to discern God's will for your life. What are the markers — signs, scripture, community, prayer — that guide you along the road He has set before you?",
   },
 ];
 
