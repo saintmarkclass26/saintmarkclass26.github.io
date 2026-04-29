@@ -72,6 +72,22 @@ const WEEKS = [
     title:       'Following Jesus  (Old Testament)',
     description: 'Exploring what it means to follow Jesus through the lens of the Old Testament — discovering how God\'s story of redemption has always pointed toward Christ.',
   },
+  {
+    id:          'week-8',
+    type:        'week',
+    number:      8,
+    emoji:       '✝️',
+    title:       'Following Jesus Part 2 (New Testament)',
+    description: 'Continuing our journey of following Jesus through the New Testament — encountering Christ in the Gospels and seeing how His life, death, and resurrection call us to discipleship.',
+  },
+  {
+    id:          'week-9',
+    type:        'week',
+    number:      9,
+    emoji:       '🧭',
+    title:       'Following Jesus Part 3 (Guide)',
+    description: 'A practical guide to following Jesus in everyday life — drawing on Christian beliefs to discover how Christ walks with us and shapes every step of our journey.',
+  },
 ];
 
 const ASSIGNMENTS = [
@@ -130,6 +146,22 @@ const ASSIGNMENTS = [
     emoji:       '🕊️',
     title:       'We must grieve our suffering',
     description: 'Reflect on the importance of grieving our pain and suffering — how acknowledging our wounds honestly is a necessary step toward healing and wholeness in Christ.',
+  },
+  {
+    id:          'assignment-8',
+    type:        'assignment',
+    number:      8,
+    emoji:       '🌊',
+    title:       'Faith in the Impossible',
+    description: 'Reflect on moments when God calls us beyond what seems possible — how Christian faith invites us to trust Him even when the path ahead appears impossible, and how Scripture reveals a God who specializes in the miraculous.',
+  },
+  {
+    id:          'assignment-9',
+    type:        'assignment',
+    number:      9,
+    emoji:       '⏳',
+    title:       'Being Busy (Part 1): Margin for God',
+    description: 'Reflect on the danger of becoming slaves to busyness — God calls us to guard a margin of time for Him. Through three Old Testament principles — Sabbath (rest), Tithe (giving), and Gleaning (leaving space for others) — we discover a life freed from the tyranny of endless work.',
   },
 ];
 
